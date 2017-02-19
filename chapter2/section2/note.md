@@ -28,6 +28,17 @@ $ \approx \theta (n^2) $
 ### The worst case running time
 $ \sum\limits_{i=0}^{n-2} n - i + 2 $  
 $ = \frac 1 2 n^2 + \frac 1 2 n - 1 + (n - 1) \times 2$  
-$ = \frac 1 2 n^2 - \frac 3 2 n - 3 $  
+$ = \frac 1 2 n^2 - \frac 3 2 n - 3 $
 $ \approx \theta (n^2) $
 
+## 2.2-2 Linear search
+### Average running time
+$ (1 + 2 + 3 + ... + n ) / n $  
+$ = \frac 1 2 n + \frac 1 2 $
+
+### The worst case running time
+$ n $
+
+## 2.2-3
+* Use high spec machine which executes each step faster.
+* Give the best condition input. Basically it's a list which is already sorted.
