@@ -17,3 +17,7 @@ $ T(k/2) = \frac{k}{2}(\ln k - 1)$  $ = \frac{k}{2} \ln \frac{k}{2} $
 ($a$) is proved so ($b$) is recursively proved, thus   
 $ T(n) = n \ln n $ is true at any $n \ (n=2^k)$
 
+## 2.3-4
+[sort.hs](./section1/sort.hs)
+
+
