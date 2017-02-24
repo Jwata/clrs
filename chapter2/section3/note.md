@@ -39,3 +39,10 @@ $ \frac{N}{2^{k-1}} = 1 $
 $ N = 2^{k-1} $  
 $ k = lg N + 1 $  
 $ => \theta(lgN) $
+
+## 2.3-7 InsertionSort with BinarySearch
+### Code
+[insertion_sort.rb](./insertion_sort.rb)
+
+### The worst case running time
+$ \sum\limits_{k=1}^{n} log(k-1) = log(n-1)\times(n-2)\times...1$
