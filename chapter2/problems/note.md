@@ -61,4 +61,48 @@ $ y_{i+1} = a^i + x \cdot \sum_\limits{k=0}^{n-(i+1)}a_{k+i+1}\cdot x^k = a^i\cd
 when $i = -1$, the loop terminates.  
 $ y = \sum_\limits{k=0}^{n-(i+1)}a_{k+i+1}\cdot x^k = \sum_\limits{k=0}^{n}a_{k}\cdot x^k$
 
-### d. Conclusion
+## 2-4 Inverstions
+### a. 
+> List the five inversions of the array [2, 3, 8, 6, 1]
+
+|$i,\ j$|$A[i],\ A[j]$|
+|---|---|
+|0, 4|2, 1|
+|1, 4|3, 1|
+|2, 3|8, 6|
+|2, 4|8, 1|
+|3, 4|5, 1|
+
+### b.
+> What array with elements from the set {1, 2, ..., n} has the most inversions?
+
+the array sorted reversely has the most inversions.Any pairs $i,\ j\ (i < j)$ in it are inversions.  
+$ {}_n C_2 = \cfrac{n \cdot (n-1)}{2}$
+
+### c.
+#### Observations
+$[1,2,3]$  
+$[1] [2,3]$ 1 step to insert 1 to []  
+$[1, 2] [3]$ 1 step for insert 2 to [1]  
+$[1, 2, 3]$ 1 step for insert 3 to [1, 2] 
+
+$[1,3,2]$ (1 inversion)  
+$[1] [3,2]$ 1 step to insert 1 to []  
+$[1, 3] [2]$ 1 step for insert 3 to [1]  
+$[1, 2, 3]$ 1 + 1 steps for insert 2 to [1, 3] 
+
+
+$[2,3,1]$ (2 inversions)  
+$[2] [3,1]$ 1 step to insert 2 to []  
+$[2, 3] [1]$ 1 step for insert 3 to [2]  
+$[1, 2, 3]$ 1 + 2 steps for insert 1 to [2, 3] 
+
+
+$[3,2,1]$ (3 inversions)  
+$[3] [2,1]$ 1 step to insert 3 to []  
+$[2, 3] [1]$ 1 + 1 steps for insert 2 to [3]  
+$[1, 2, 3]$ 1 + 2 steps for insert 1 to [2, 3] 
+
+#### The relationshipt between the running time and the number of insertions.
+At the $k$-th iteration, if $A[1..k]$ has $m$ inversions with $A[k]$ the last $m$ elements of $A[1..k-1]$ are the inversions because $A[1..k-1]$ are sorted. Thus the insertion needs $m$-th iterations.
+Thus the running time is $\theta (n+d)$, where $d$ is the total number of inversions.
