@@ -52,6 +52,11 @@ $0 \leq f(n) \leq c_4 g(n)$ for all $n \geq n_2$
 $0 \leq c_3 g(n) \leq f(n) \leq c_4 g(n)$ for all $n \geq max(n_1, n_2)$  
 which is the definition of $\Theta$
 
+## 3.1-6
+> Prove that the running time of an algorithm is $\Theta(g(n))$ if and only if its worst-case running time is $O(g(n))$ and its best case running time is $\Omega(g(n))$
+
+
+
 ## 3.1-7
 > Prove that $o(g(n)) \cap \omega(g(n))$ is the empty set.
 
