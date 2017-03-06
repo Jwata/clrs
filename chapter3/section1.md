@@ -19,3 +19,16 @@ $ \cfrac{1}{2} n^b <
 
 The $O(n^2)$ indicates that the running time of algorithm has an asymptotic upper bound $n^2$. it means that the running time of algorithm A is at most $n^2$. and that doesn't make sentence `at least`
 
+## 3.1-4
+> Is $2^{n+1} = O(2^n)$?
+
+$2^{n+1} \leq 2 \cdot 2^n = O(2^n)$ => true
+
+>  Is $2^{2n} = O(2^n)$?
+
+$2^{2n} = 2^n \cdot 2^n \geq 2^n \neq O(2^n)$ => false
+
+
+## 3.1-5
+> Prove the Theorem 3.1.  
+> For any two functions $f(n)$ and $g(n)$, we have $f(n) = \Theta(g(n))$ if and only if $f(n) = O(g(n))$ and $f(n) = \Omega(g(n))$
