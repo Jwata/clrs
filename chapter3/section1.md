@@ -51,3 +51,14 @@ $0 \leq f(n) \leq c_4 g(n)$ for all $n \geq n_2$
 
 $0 \leq c_3 g(n) \leq f(n) \leq c_4 g(n)$ for all $n \geq max(n_1, n_2)$  
 which is the definition of $\Theta$
+
+## 3.1-7
+> Prove that $o(g(n)) \cap \omega(g(n))$ is the empty set.
+
+If $f(n) = o(g(n))$, we have that for any positive constant $c > 0$  
+$ 0 \leq f(n) < c g(n)$ for all $n > n_1$
+
+If $f(n) = \omega(g(n))$, we have that for any constant $c > 0$  
+$ 0 \leq c g(n) < f(n) $ for all $n > n_2$
+
+means that it's impossible to have $g(n)$ which satisfies both definitions.
