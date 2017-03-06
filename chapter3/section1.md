@@ -13,3 +13,9 @@ $ \cfrac{1}{2} n^b <
 ... +
 {}_b C_0 \cdot a^b
 < 2 n^b$
+
+## 3.1-3
+> Explain why the statement, “The running time of algorithm A is at least $O(n^2)$,” is meaningless.
+
+The $O(n^2)$ indicates that the running time of algorithm has an asymptotic upper bound $n^2$. it means that the running time of algorithm A is at most $n^2$. and that doesn't make sentence `at least`
+
