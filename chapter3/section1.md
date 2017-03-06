@@ -32,3 +32,22 @@ $2^{2n} = 2^n \cdot 2^n \geq 2^n \neq O(2^n)$ => false
 ## 3.1-5
 > Prove the Theorem 3.1.  
 > For any two functions $f(n)$ and $g(n)$, we have $f(n) = \Theta(g(n))$ if and only if $f(n) = O(g(n))$ and $f(n) = \Omega(g(n))$
+
+If $f(n) = \Theta(g(n))$, we have that:  
+$ 0 \leq c_1 g(n) \leq f(n) \leq c_2 g(n)$ for $n > n_0$  
+
+$0 \leq  c_1 g(n) \leq f(n)$ for $n > n_0$, which means that:  
+$f(n) = \Omega(g(n))$
+
+$0 \leq  f(n) \leq c_2 g(n)$ for $n > n_0$, which means that:  
+$f(n) = O(g(n))$
+
+
+On the other hand,  
+if $f(n) = O(g(n))$ and $f(n) = \Omega(g(n))$ we have that:  
+
+$0 \leq c_3 g(n) \leq f(n)$ for all $n \geq n_1$   
+$0 \leq f(n) \leq c_4 g(n)$ for all $n \geq n_2$   
+
+$0 \leq c_3 g(n) \leq f(n) \leq c_4 g(n)$ for all $n \geq max(n_1, n_2)$  
+which is the definition of $\Theta$
