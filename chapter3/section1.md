@@ -67,3 +67,14 @@ If $f(n) = \omega(g(n))$, we have that for any constant $c > 0$
 $ 0 \leq c g(n) < f(n) $ for all $n > n_2$
 
 means that it's impossible to have $g(n)$ which satisfies both definitions.
+
+## 3.1-8
+> Give corresponding definitions for $\Omega(g(n, m))$ and $\Theta(g(n, m))$
+
+$\Omega(g(n, m))$ = $f(n, m)$  
+if there exists positive constant c, $n_0$, and $m_0$ such that  
+$0 \leq cg(n,m) \leq f(n, m)$ for all $n \geq n_0$ or $m \geq m_0$ 
+
+$\Theta(g(n, m))$ = $f(n, m)$  
+if there exists positive constant $c_1$, $c_2$, $n_0$, and $m_0$ such that  
+$0 \leq c_1g(n,m) \leq f(n, m) \leq c_2g(n,m)$ for all $n \geq n_0$ or $m \geq m_0$ 
